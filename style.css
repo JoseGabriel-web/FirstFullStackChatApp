@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merienda One', cursive;
+  scroll-behavior: smooth;
+}
+
+
+/*ScrollBars*/
+body::-webkit-scrollbar, .messages-contianer::-webkit-scrollbar {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb, .messages-contianer::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: rgba(0,0,0,0.4);
+}
+
+body, .messages-contianer {
+scrollbar-color: rgba(0,0,0,0.4) transparent;
+scrollbar-width: thin;  
+}
+
+/*scrollBars */
+
+body {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #293;
+  transition: 300ms all ease-in;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+.img {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+form{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+input, textarea {
+ font-size: 2rem;
+}
+
+input,textarea {
+  margin-top: .3rem;
+}
+
+label {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+} 
+
+button {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  width: 25%;
+  padding: 12px 8px;
+  text-transform: capitalize;
+}
+
+.messages-contianer {
+  width: 70%;
+  margin: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  height: 35vh;
+  translate: 300ms all;
+  overflow-y: scroll;
+}
+
+.messages-contianer h1 {
+  margin-top: .5rem;
+  text-transform: capitalize;
+}
+
+.messages-contianer p {
+  margin: .5rem 0;
+  text-transform: capitalize;
+}
+
+h6 {
+  margin-bottom: 2rem;
+}
+
+.msg-container {
+  margin-bottom: .7rem;
+  padding: 1rem;
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 4px 13px -2px rgba(0,0,0,0.75);
+  box-shadow: -1px 4px 13px -2px rgba(0,0,0,0.75);
+}
+
+.msg-container button{
+  display: table;
+  padding: 15px 7px;
+  width: 50px;
+}
+
+#error {
+  font-size: 1.2rem;
+  width: 70%;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 15px 7px;
+  color: white;
+  text-transform: capitalize;
+  background: rgb(195, 126, 126);
+}
+
+.technologies {
+  text-decoration-line: underline;
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  form button {
+    width: 60%;
+  }
+
+  .messages-contianer {
+    width: 80%;
+  }
+
+  #error {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) and (max-width: 1300px) {
+  * {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  form button {
+    width: 60%;
+  }
+
+  .messages-contianer {
+    width: 80%;
+  }
+
+  #error {
+    width: 80%;
+  }
+}
